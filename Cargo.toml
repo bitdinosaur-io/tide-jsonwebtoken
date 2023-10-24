@@ -3,6 +3,7 @@ name = "tide-jsonwebtoken"
 version = "0.1.0"
 edition = "2021"
 description = "Tide (http-rs/tide) JWT Authorization Middleware"
+license = "MIT"
 homepage = "https://github.com/bitdinosaur-io/tide-jsonwebtoken"
 repository = "https://github.com/bitdinosaur-io/tide-jsonwebtoken"
 keywords = ["jwt", "api", "token", "jsonwebtoken", "tide"]
