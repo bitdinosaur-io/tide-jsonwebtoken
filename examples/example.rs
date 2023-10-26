@@ -15,7 +15,7 @@ async fn main() -> Result<(), std::io::Error> {
             .state()
             .jwt
             .clone()
-            .gen_token("free", "test1", "010101", 1798111872)
+            .gen_token("free", "test1", "010101", 1798111872, 1798110872)
             .unwrap();
         Ok(format!("Your token: {:?}", token))
     });

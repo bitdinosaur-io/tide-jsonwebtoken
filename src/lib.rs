@@ -8,6 +8,7 @@ pub struct Claims {
     pub username: String,
     pub uid: String,
     pub exp: u64,
+    pub login_time: u64,
 }
 
 #[derive(Clone)]
@@ -28,12 +29,14 @@ impl ApiKeyMiddleware {
         username: &str,
         uid: &str,
         exp: u64,
+        login_time: u64,
     ) -> Result<String, jsonwebtoken::errors::Error> {
         let claims = Claims {
             sub: sub.to_string(),
             username: username.to_string(),
             uid: uid.to_string(),
             exp,
+            login_time,
         };
         jsonwebtoken::encode(
             &Header::default(),

@@ -1,6 +1,6 @@
 [package]
 name = "tide-jsonwebtoken"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Tide (http-rs/tide) JWT Authorization Middleware"
 license = "MIT"
